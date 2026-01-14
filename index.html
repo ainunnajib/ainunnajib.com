@@ -4,9 +4,278 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ainun Najib</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafafa;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .location {
+            color: #888;
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #888;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+        }
+
+        .role {
+            margin-bottom: 1.5rem;
+        }
+
+        .role-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .role-company {
+            color: #555;
+        }
+
+        .role-period {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .role-description {
+            margin-top: 0.5rem;
+            color: #444;
+        }
+
+        .project {
+            margin-bottom: 1.5rem;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .project-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .project-title a:hover {
+            border-color: #1a1a1a;
+        }
+
+        .project-year {
+            color: #888;
+            font-weight: 400;
+        }
+
+        .project-description {
+            margin-top: 0.5rem;
+            color: #444;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 0.1em 0.3em;
+            border-radius: 3px;
+        }
+
+        .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .education-school {
+            font-weight: 600;
+        }
+
+        .education-degree {
+            color: #555;
+        }
+
+        .education-achievements {
+            margin-top: 0.5rem;
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+            transition: border-color 0.2s;
+        }
+
+        .links a:hover {
+            border-color: #1a1a1a;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill {
+            background: #e8e8e8;
+            padding: 0.3rem 0.7rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .links {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Ainun Najib</h1>
-    <p>Coming soon.</p>
+    <div class="container">
+        <header>
+            <h1>Ainun Najib</h1>
+            <p class="tagline">Data Platform & AI/ML Leader</p>
+            <p class="location">Indonesian in Singapore</p>
+        </header>
+
+        <section>
+            <h2>Work</h2>
+            <div class="role">
+                <div class="role-title">Global Head of Data Platform <span class="role-company">at Dyson</span></div>
+                <div class="role-period">2024 - Present</div>
+            </div>
+            <div class="role">
+                <div class="role-title">Head of Analytics Platform <span class="role-company">at Grab</span></div>
+                <div class="role-period">2018 - 2024</div>
+                <p class="role-description">Built real-time analytics, ML platforms, and self-service data tools serving 620M+ users across Southeast Asia.</p>
+            </div>
+            <div class="role">
+                <div class="role-title">Head of Data <span class="role-company">at Traveloka</span></div>
+                <div class="role-period">Previously</div>
+                <p class="role-description">Led analytics, data science, and governance for Indonesia's leading travel platform.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Civic Tech</h2>
+            <div class="project">
+                <div class="project-title">
+                    <a href="https://github.com/kawalpemilu/kawalpemilu2014">KawalPemilu.org</a>
+                    <span class="project-year">2014</span>
+                </div>
+                <p class="project-description">
+                    Founded Indonesia's election transparency platform. Mobilized 700+ volunteers to verify 500,000+ ballot tallies during the contested 2014 presidential election.
+                    Built in 2 days for $54. Results matched official count exactly. Featured in <a href="https://time.com/5567287/social-media-indonesia-elections-kawal-pemilu/">TIME</a>.
+                </p>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    KawalCOVID19
+                    <span class="project-year">2020</span>
+                </div>
+                <p class="project-description">
+                    Founded independent COVID-19 information platform to verify government data and inform the Indonesian public during the pandemic.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-school">Nanyang Technological University, Singapore</div>
+                <div class="education-degree">B.Eng (Honours) in Computer Engineering, 2003 - 2007</div>
+                <p class="education-achievements">
+                    ACM ICPC World Finals (Tokyo 2007) · ACM ICPC Regional Champion (Tehran 2006) · Asia Pacific Informatics Olympiad (2003)
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">Data Platform</span>
+                <span class="skill">Databricks</span>
+                <span class="skill">Snowflake</span>
+                <span class="skill">Spark</span>
+                <span class="skill">ML/AI</span>
+                <span class="skill">Azure</span>
+                <span class="skill">Data Science</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Links</h2>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/ainunnajib/">LinkedIn</a>
+                <a href="https://twitter.com/ainunnajib">Twitter</a>
+                <a href="https://github.com/ainunnajib">GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>From Gresik, East Java. Based in Singapore.</p>
+        </footer>
+    </div>
 </body>
 </html>
